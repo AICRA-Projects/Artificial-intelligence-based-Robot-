@@ -35,9 +35,7 @@ OpenCV installation
     libxvidcore-dev libx264-dev libjpeg-dev libpng-dev libtiff-dev \
     gfortran openexr libatlas-base-dev python3-dev python3-numpy \
     libtbb2 libtbb-dev libdc1394-22-dev \
-* mkdir ~/opencv_build && cd ~/opencv_build
-git clone https://github.com/opencv/opencv.git
-git clone https://github.com/opencv/opencv_contrib.git
+* mkdir ~/opencv_build && cd ~/opencv_build git clone https://github.com/opencv/opencv.git && git clone https://github.com/opencv/opencv_contrib.git
 * cd ~/opencv_build/opencv
 mkdir build && cd build
 * cmake -D CMAKE_BUILD_TYPE=RELEASE \
@@ -47,3 +45,11 @@ mkdir build && cd build
     -D OPENCV_GENERATE_PKGCONFIG=ON \
     -D OPENCV_EXTRA_MODULES_PATH=~/opencv_build/opencv_contrib/modules \
     -D BUILD_EXAMPLES=ON ..
+* make -j8
+* sudo make install
+## Step 4 :
+Setup your python code for human detection by using hog detection 
+## Step 5 :
+Setup your arduino code 
+## Reference 
+* https://developer.nvidia.com/embedded/jetson-nano-developer-kit
