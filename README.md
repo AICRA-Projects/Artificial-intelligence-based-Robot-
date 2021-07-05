@@ -53,3 +53,4 @@ Setup your python code for human detection by using hog detection
 Setup your arduino code 
 ## Reference 
 * https://developer.nvidia.com/embedded/jetson-nano-developer-kit
+* https://debuggercafe.com/opencv-hog-hyperparameter-tuning-for-accurate-and-fast-person-detection/
