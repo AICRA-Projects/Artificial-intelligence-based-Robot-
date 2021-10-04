@@ -2,11 +2,11 @@
 Artificial intelligence (AI) and robotics are a powerful combination for automating tasks inside and outside of the factory setting. In recent years, AI has become an increasingly common presence in robotic solutions, introducing flexibility and learning capabilities in previously rigid applications.
 This System design a mobile rescue Human detection robotic system based on Arduino to help the people on time which are trapped in natural calamity like disaster, earthquake, floods etc.It gives timely & accurately reflect dynamic situation of human in disaster region like in the underground regions to control room, so that rescue team of Experts & doctors can be sending to the victim’s location for primary treatment and can be sent to the safe place or hospital.
 # how to operate
-## step 1:  Give Power to the robot by connecting White Usb Cable with USB connector of black power bank is in downward 
-## step 2:   press "On" Red switch and Green Light will get ON in 360 degree RPlidar   
-## step 3:   wait for the RPlidar stops or delay for fraction of seconds 
-## step 4:  After the delay motor activation and robot comes in motion
-## step 5:  Robot will start moving without getting collisions 
+## step 1:  Give Power to the robot by connecting White Usb Cable with USB connector of Power Bank 
+## step 2:  Give Power to the robot by connecting White Usb Cable with USB connector of Power Bank 
+## step 3:  Stand in front of the robot from 1 meter of distance
+## step 4:  Robot will start moving once it Tracks human body 
+## step 5:  Foward and Right or left will move by Real time Tracking of A.I Interface of Human body detection
 # Hardware Components
 * I shaped Motor 300rpm
 * Arduino Uno 
