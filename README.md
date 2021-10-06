@@ -77,6 +77,7 @@ Setup your python code for human detection by using hog detection
 ## Step 6 :
 Setup your arduino code 
 code : https://github.com/AICRA-Projects/Artificial-intelligence-based-Robot-/blob/main/data_lines_jetbot.ino
+
 Digital Pins are used to interface with Jetson nano on the basis of digital input data reading 
 
 ## Conclusion :
