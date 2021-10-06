@@ -58,24 +58,29 @@ mkdir build && cd build
 * make -j8
 * sudo make install
 ## Step 5 : Human body Detection 
-HOG – Histogram of Oriented Gradients
+## HOG – Histogram of Oriented Gradients
 The histogram of oriented gradients is a feature descriptor algorithm used in computer vision and image processing. Its main purpose is object detection. The essential thought behind the HOG descriptor is that local object shape and appearance within an image can be described by the distribution of intensity gradients or edge directions.
 
 This algorithm checks the surrounding pixels of every single pixel using the sliding window technique. The goal is to check how darker is the current pixel compared to the surrounding pixels and then it draws an arrow showing the direction of the image getting darker for every pixel. These arrows are called Gradients.
 
-Linear SVM -Linear Support Vector Machine
+### Linear SVM -Linear Support Vector Machine
 LSVM or Linear Support Vector Machine is a linear model for classification and regression problems. The idea behind SVM is that the algorithm creates a line or a hyperplane which separates the data into classes.
-**Explanation:
+#### Explanation:
 
 detectMultiScale() detects the objects from the image and returns their x and y coordinate, height, and width.
 The winStride parameter indicates the step size in both the x and y location of the sliding window.
 The padding parameter indicates the number of pixels in both the x and y direction in which the sliding window ROI is “padded” prior to HOG feature extraction.
-The scale parameter controls the factor in which our image is resized at each layer of the image pyramid.**
+The scale parameter controls the factor in which our image is resized at each layer of the image pyramid.
 
 Setup your python code for human detection by using hog detection 
 
 ## Step 6 :
 Setup your arduino code 
+code : https://github.com/AICRA-Projects/Artificial-intelligence-based-Robot-/blob/main/data_lines_jetbot.ino
+Digital Pins are used to interface with Jetson nano on the basis of digital input data reading 
+
+## Conclusion :
+Human following robot is very common in this technology era. Human following is a technique used by robot and autonomous vehicles to follow a human within a specific range. In this case, communication between the human and the robot is the most significant factor where sensor is needed to ensure its successfulness.
 ## Reference 
 * https://developer.nvidia.com/embedded/jetson-nano-developer-kit
 * https://debuggercafe.com/opencv-hog-hyperparameter-tuning-for-accurate-and-fast-person-detection/
