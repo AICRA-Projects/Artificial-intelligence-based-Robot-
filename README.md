@@ -1,12 +1,12 @@
 # Artificial-intelligence-based-Robot
 Artificial intelligence (AI) and robotics are a powerful combination for automating tasks inside and outside of the factory setting. In recent years, AI has become an increasingly common presence in robotic solutions, introducing flexibility and learning capabilities in previously rigid applications.
 This System design a mobile rescue Human detection robotic system based on Arduino to help the people on time which are trapped in natural calamity like disaster, earthquake, floods etc.It gives timely & accurately reflect dynamic situation of human in disaster region like in the underground regions to control room, so that rescue team of Experts & doctors can be sending to the victim’s location for primary treatment and can be sent to the safe place or hospital.
-# how to operate
+# how to operate 
 ## step 1:  Give Power to the robot by connecting White Usb Cable with USB connector of Power Bank 
-## step 2:  Give Power to the robot by connecting White Usb Cable with USB connector of Power Bank 
-## step 3:  Stand in front of the robot from 1 meter of distance
-## step 4:  Robot will start moving once it Tracks human body 
-## step 5:  Foward and Right or left will move by Real time Tracking of A.I Interface of Human body detection
+## step 2:  Stand in front of the robot from 1 meter of distance
+## step 3:  Robot will start moving once it Tracks human body 
+## step 4:  Foward and Right or left will move by Real time Tracking of A.I Interface of Human body detection
+
 # Hardware Components
 * I shaped Motor 300rpm
 * Arduino Uno 
@@ -26,13 +26,17 @@ This System design a mobile rescue Human detection robotic system based on Ardui
 * Mobile POWER bank 
 * USB Type C
 * Samsung SD CARD 32gb 
+
 # Methodology:
 ## Step 1:
-Setup the hardware accordaing to connection is required 
+Setup the hardware according to connection is required 
 ## Step 2 :
 Boot Nvidia Jetson Nano 
-## Step 3:
+## Step 3: Python Package  
+A package is basically a directory with Python files and a file with the name init.py. This means that every directory inside of the Python path, which contains a file named init.py, will be treated as a package by Python. It's possible to put several modules into a Package.
+## Step 4:
 OpenCV installation
+
 #### Opencv Install :
 * sudo apt update
 * sudo apt install python3-opencv
@@ -53,9 +57,24 @@ mkdir build && cd build
     -D BUILD_EXAMPLES=ON ..
 * make -j8
 * sudo make install
-## Step 4 :
+## Step 5 : Human body Detection 
+HOG – Histogram of Oriented Gradients
+The histogram of oriented gradients is a feature descriptor algorithm used in computer vision and image processing. Its main purpose is object detection. The essential thought behind the HOG descriptor is that local object shape and appearance within an image can be described by the distribution of intensity gradients or edge directions.
+
+This algorithm checks the surrounding pixels of every single pixel using the sliding window technique. The goal is to check how darker is the current pixel compared to the surrounding pixels and then it draws an arrow showing the direction of the image getting darker for every pixel. These arrows are called Gradients.
+
+Linear SVM -Linear Support Vector Machine
+LSVM or Linear Support Vector Machine is a linear model for classification and regression problems. The idea behind SVM is that the algorithm creates a line or a hyperplane which separates the data into classes.
+**Explanation:
+
+detectMultiScale() detects the objects from the image and returns their x and y coordinate, height, and width.
+The winStride parameter indicates the step size in both the x and y location of the sliding window.
+The padding parameter indicates the number of pixels in both the x and y direction in which the sliding window ROI is “padded” prior to HOG feature extraction.
+The scale parameter controls the factor in which our image is resized at each layer of the image pyramid.**
+
 Setup your python code for human detection by using hog detection 
-## Step 5 :
+
+## Step 6 :
 Setup your arduino code 
 ## Reference 
 * https://developer.nvidia.com/embedded/jetson-nano-developer-kit
