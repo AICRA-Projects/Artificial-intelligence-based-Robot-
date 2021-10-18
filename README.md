@@ -7,6 +7,10 @@ This System design a mobile rescue Human detection robotic system based on Ardui
 ## step 3:  Robot will start moving once it Tracks human body 
 ## step 4:  Foward and Right or left will move by Real time Tracking of A.I Interface of Human body detection
 
+## Circuit diagram 
+![AI Based Robot](https://user-images.githubusercontent.com/42414598/137719856-b296e906-8e35-4f9c-a368-a7a516be4edd.png)
+
+
 # Hardware Components
 * I shaped Motor 300rpm
 * Arduino Uno 
